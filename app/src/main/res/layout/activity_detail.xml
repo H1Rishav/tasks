@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:background="@drawable/gradient">
+
+
+    <TextView
+        android:id="@+id/pl_info"
+        style="@style/textStyle"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/double_triangle"
+        android:padding="30dp"
+        android:text="PLAYER INFORMATION"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.097" />
+
+    <RelativeLayout
+        android:id="@+id/rel_pl1"
+        style="@style/dialog_layout"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@id/startbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/pl_info"
+        app:layout_constraintVertical_bias="0.296" >
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/blue_1"
+            android:id="@+id/id1"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            style="@style/dialog_buttons"
+            android:backgroundTint="@color/player_one"
+            android:background="@drawable/dialong_btn_layout"
+            android:text="Player"
+            android:textSize="25sp"
+            android:layout_below="@+id/id1"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_pl1_info"
+        style="@style/dialog_layout"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="228dp"
+        app:layout_constraintBottom_toTopOf="@id/startbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/pl_info"
+        app:layout_constraintVertical_bias="0.289">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/player1_icon" />
+
+        <EditText
+            android:id="@+id/player1_name"
+            style="@style/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/edit_text"
+            android:hint="player1name" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_pl2_info"
+        style="@style/dialog_layout"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="228dp"
+        app:layout_constraintBottom_toTopOf="@id/startbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rel_pl1"
+        app:layout_constraintVertical_bias="0.193">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/player2_icon" />
+
+        <EditText
+            android:id="@+id/player2_name"
+            style="@style/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/edit_text"
+            android:backgroundTint="@color/player_two"
+            android:gravity="center_horizontal"
+            android:hint="player2name" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_pl2"
+        style="@style/dialog_layout"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@id/startbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rel_pl1"
+        app:layout_constraintVertical_bias="0.193" >
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/red_2"
+            android:id="@+id/id2"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/play_again"
+            style="@style/dialog_buttons"
+            android:backgroundTint="@color/player_two"
+            android:background="@drawable/dialong_btn_layout"
+            android:text="Player"
+            android:textSize="25sp"
+            android:layout_below="@+id/id2"/>
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/startbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="START"
+        style="@style/gamepgbtn"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.918" />
+
+    <EditText
+
+        style="@style/dialog_layout"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:id="@+id/grid"
+        android:height="50dp"
+        android:gravity="center"
+        android:hint="Grid size"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/startbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+         />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

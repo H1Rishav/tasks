@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_layout"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            style="@style/dialog_buttons"
+            android:backgroundTint="@color/white"
+            android:text="HOME"
+            android:textColor="@color/black"
+            android:background="@drawable/dialong_btn_layout"
+            android:id="@+id/winner_name1"
+
+            />
+        <TextView
+            android:id="@+id/wins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WINS!!"
+            android:layout_below="@id/winner_name1"
+            style="@style/textStyle"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/medal"
+            android:src="@drawable/medal"
+            android:layout_below="@id/wins"
+            android:layout_marginBottom="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/play_again1"
+            style="@style/dialog_buttons"
+            android:backgroundTint="@color/player_one"
+            android:background="@drawable/dialong_btn_layout"
+            android:text="Play Again"
+            android:layout_below="@+id/medal"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/home_btn1"
+            android:backgroundTint="@color/player_two"
+            android:text="Home"
+            android:background="@drawable/dialong_btn_layout"
+            style="@style/dialog_buttons"
+            android:layout_below="@+id/play_again1"/>
+
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
